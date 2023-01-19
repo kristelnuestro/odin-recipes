@@ -23,9 +23,15 @@ header, footer {
     z-index: 1;
 }
 
-header h1 {
-    width: 900px;
-    border:1px solid #e99f4c;
+header > * {
+    width: 1000px;
+    /* border:1px solid #e99f4c; */
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    width: 1000px;
 }
 
 .menu {
@@ -35,11 +41,15 @@ header h1 {
 }
 
 .menu-items {
-    width: 900px;
+    width: 1000px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 1rem;
+    gap: 2rem;
+}
+
+.menu-items li:hover {
+    transform: scale(1.05);  /* 105 zoom  */
 }
 
 .menu-items li {
@@ -48,13 +58,13 @@ header h1 {
     background-color: #fff;
     /* width: 250px; */
     filter: drop-shadow(0 0 2px rgb(65, 65, 65));
+    transition: transform .2s;  /* animation */
 
 }
 
-p {
-    padding: 0.5rem;
+.description {
+    padding: 0 1rem 1rem 1rem;
     text-align: justify;
-    border: 1px#e99f4c;
 }
 
 /* .menu-items a:link, a:visited {
@@ -68,13 +78,6 @@ p {
     text-align: center;
 } */
 
-.link {
-    text-decoration: none;
-    text-align: ;
-    /* display: flex;
-    justify-content: flex-end; */
-}
-
 li img {
     width: 250px;
 }
@@ -85,6 +88,50 @@ footer {
     text-align: center;
     border: 2px solid #e99f4c;
 }
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.container-items {
+    width: 1000px;
+    margin-top: 3rem;
+    padding: 1rem;
+}
+
+.image-container {
+    text-align: center;
+}
+
+.recipe-image {
+    height: auto;
+}
+
+li {
+    list-style-position: inside;
+}
+
+hr {
+    height: 2px;
+    color: #5995DA;
+    background-color: #5995DA;
+    border-width: 0;
+}
+
+.section {
+    margin: 0.5rem 0;
+}
+
+/* .back-to-top {
+    bottom: 0;
+    right: 0;
+    position: fixed;
+    background-color: #e99f4c;
+} */
+
+
+
 /* .container {
     border: 1px solid #e99f4c;
     border-radius: 25px;
